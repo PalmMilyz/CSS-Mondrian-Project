@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian Project</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin-top: 0px;
+        padding: 0;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: 320px 198px 153px 50px;
+        grid-template-rows: 414px 130px 155px 22px;
+        background-color: #000;
+        height: 748px;
+        width: 748px;
+        gap: 9px;
+        grid-template-areas:
+          "   red-color      white-color      white-color      white-color    "
+          "   white1-color      white2-color      white2-color      blue-color    "
+          "   white1-color      white2-color      white2-color      white3-color    "
+          "   white4-color      yellow-color      black-color      white3-color    ";
+      }
+
+      .white-color {
+        background-color: #f0f1ec;
+        grid-area: white-color;
+      }
+
+      .white1-color {
+        background-color: #f0f1ec;
+        grid-area: white1-color;
+      }
+
+      .white2-color {
+        background-color: #f0f1ec;
+        grid-area: white2-color;
+      }
+      .white3-color {
+        background-color: #f0f1ec;
+        grid-area: white3-color;
+        border-top: 10px;
+      }
+      .white4-color {
+        background-color: #f0f1ec;
+        grid-area: white4-color;
+      }
+
+      .red-color {
+        background-color: #e72f24;
+        grid-area: red-color;
+      }
+
+      .black-color {
+        background-color: #232629;
+        grid-area: black-color;
+      }
+
+      .blue-color {
+        background-color: #004592;
+        grid-area: blue-color;
+        border-bottom: 10px solid black;
+      }
+
+      .yellow-color {
+        background-color: #f9d01e;
+        grid-area: yellow-color;
+      }
+
+      /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="white-color"></div>
+      <div class="white1-color"></div>
+      <div class="white2-color"></div>
+      <div class="white3-color"></div>
+      <div class="white4-color"></div>
+      <div class="red-color"></div>
+      <div class="black-color"></div>
+      <div class="blue-color"></div>
+      <div class="yellow-color"></div>
+      <div class="gap-color"></div>
+    </div>
+    <!-- Write your HTML here -->
+  </body>
+</html>
